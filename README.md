@@ -399,9 +399,7 @@ This is a Flask application that interacts with the WHM API to manage accounts, 
     "backup_monthly_retention": 3,
     "backup_weekly_day": "Sunday",
     "backup_weekly_enable": "yes",
-    "backup_weekly_retention":
-
-4,
+    "backup_weekly_retention": "yes",
     "backupdays": ["Monday", "Wednesday", "Friday"],
     "backupenable": "yes",
     "backuplogs": "yes",
