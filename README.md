@@ -99,8 +99,7 @@ This is a Flask application that interacts with the WHM API to manage accounts, 
       "email": "user@example.com",
       "backup": "enabled",
       "suspended": "no"
-    },
-    ...
+    }
   ]
   ```
 
