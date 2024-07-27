@@ -248,8 +248,7 @@ This is a Flask application that interacts with the WHM API to manage accounts, 
     {
       "username": "example_user",
       "email": "user@example.com"
-    },
-    ...
+    }
   ]
   ```
 
