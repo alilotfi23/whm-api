@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "08d912ad-2fa7-404c-a751-0a9522480db2",
+		"name": "whmapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listaccts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/listaccts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"listaccts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createaccta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain\": {{domain}},\n    \"username\": {{username}},\n    \"password\": {{password}},\n    \"contactemail\": {{contactemail}},\n    \"plan\": {{plan}},\n    \"dkim\": {{dkim}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/createacct",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"createacct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suspend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/suspend",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"suspend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}},\n    \"domain\": {{domian}},\n    \"contactemail\": {{contactemail}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/modify",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeplan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}},\n    \"pkg\": {{pkg}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/changeplan",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"changeplan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changepass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}},\n    \"password\": {{password}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/changepass",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"changepass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteacct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": {{username}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/deleteacct",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"deleteacct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsuspend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/unsuspend",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"unsuspend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listusers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/listusers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"listusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addzonerecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain\": {{domain}},\n    \"name\": {{name}},\n    \"dnsclass\": {{dnsclass}},\n    \"ttl\": {{ttl}},\n    \"type\": {{tupe}},\n    \"address\": {{address}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/addzonerecord",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"addzonerecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removezonerecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"zone\": {{done}},\n    \"line\": {{line}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/removezonerecord",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"removezonerecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editzonerecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain\": {{domain}},\n    \"line\": {{line}},\n    \"name\": {{name}},\n    \"dnsclass\": {{dnsclass}},\n    \"ttl\": {{ttl}},\n    \"type\": {{type}},\n    \"address\": {{address}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/editzonerecord",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"editzonerecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "backupconfig",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"backup_daily_retention\": {{backup_daily_retention}},\n    \"backup_monthly_enable\": {{backup_monthly_dates}},\n    \"backup_monthly_dates\": {{backup_monthly_dates}},\n    \"backup_monthly_retention\": {{backup_monthly_retention}},\n    \"backup_weekly_day\": {{backup_weekly_day}},\n    \"backup_weekly_enable\": {{backup_weekly_enable}},\n    \"backup_weekly_retention\": {{backup_weekly_retention}},\n    \"backupdays\": {{backupdays}},\n    \"backupenable\": {{backupenable}},\n    \"backuplogs\": {{backuplogs}},\n    \"backupsuspendedaccts\": {{backupsuspendedaccts}},\n    \"backuptype\": {{backuptype}},\n    \"maximum_restore_timeout\": {{maximum_restore_timeout}},\n    \"maximum_timeout\": {{maximum_timeout}},\n    \"min_free_space\": {{min_free_space}},\n    \"min_free_space_unit\": {{min_free_space_unit}},\n    \"mysqlbackup\": {{mysqlbackup}}\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backupconfig",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backupconfig"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "backupdest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": {{backupname}},\n    \"type\": {{backuptypedest}},\n    \"disabled\": {{disabled}},\n    \"bucket\": {{bucket}},\n    \"aws_access_key_id\": {{aws_access_key_id}},\n    \"password\": {{backuppassword}},\n    \"application_key\": {{application_key}},\n    \"application_key_id\": {{application_key_id}},\n    \"bucket_id\": {{bucket_id}},\n    \"bucket_name\": {{bucket_name}},\n    \"script\": {{script}},\n    \"host\": {{host}},\n    \"username\": {{backupusername}},\n    \"client_id\": {{client_id}} ,\n    \"client_secret\": {{client_secret}},\n    \"authtype\": {{authtype}},\n    \"path\": {{path}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backupdest",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backupdest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbackupconfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/getbackupconfig",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getbackupconfig"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restorequeueadd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {{user}},\n    \"restore_point\": {{restore_point}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/restorequeueadd",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"restorequeueadd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restorequeue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}restorequeue",
+					"host": [
+						"{{url}}restorequeue"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://185.213.167.32:1050"
+		},
+		{
+			"key": "username",
+			"value": "\"lotfi\""
+		},
+		{
+			"key": "domain",
+			"value": "\"ali.com\""
+		},
+		{
+			"key": "password",
+			"value": "\"jjrejjre123AAShd\""
+		},
+		{
+			"key": "contactemail",
+			"value": "\"ali.lotfi@gmail.com\""
+		},
+		{
+			"key": "plan",
+			"value": "\"1\""
+		},
+		{
+			"key": "dkim",
+			"value": "\"1\""
+		},
+		{
+			"key": "user",
+			"value": "\"ali\""
+		},
+		{
+			"key": "pkg",
+			"value": "\"2\""
+		},
+		{
+			"key": "name",
+			"value": "\"'lotfi\""
+		},
+		{
+			"key": "dnsclass",
+			"value": "\"IN\""
+		},
+		{
+			"key": "ttl",
+			"value": "\"86400\""
+		},
+		{
+			"key": "type",
+			"value": "\"A\""
+		},
+		{
+			"key": "address",
+			"value": "\"185.213.167.32\""
+		},
+		{
+			"key": "zone",
+			"value": "\"lotfi\""
+		},
+		{
+			"key": "line",
+			"value": "\"line\""
+		},
+		{
+			"key": "backup_daily_retention",
+			"value": "\"5\""
+		},
+		{
+			"key": "backup_monthly_enable",
+			"value": "\"1\""
+		},
+		{
+			"key": "backup_monthly_dates",
+			"value": "\"20\""
+		},
+		{
+			"key": "backup_monthly_retention",
+			"value": "\"1\""
+		},
+		{
+			"key": "backup_weekly_day",
+			"value": "\"5\""
+		},
+		{
+			"key": "backup_weekly_enable",
+			"value": "\"1\""
+		},
+		{
+			"key": "backup_weekly_retention",
+			"value": "\"1\""
+		},
+		{
+			"key": "backupdays",
+			"value": "\"0,2\""
+		},
+		{
+			"key": "backupenable",
+			"value": "\"1\""
+		},
+		{
+			"key": "backuplogs",
+			"value": "\"0\""
+		},
+		{
+			"key": "backupsuspendedaccts",
+			"value": "\"0\""
+		},
+		{
+			"key": "backuptype",
+			"value": "\"compressed\""
+		},
+		{
+			"key": "maximum_restore_timeout",
+			"value": "\"21600\""
+		},
+		{
+			"key": "maximum_timeout",
+			"value": "\"7200\""
+		},
+		{
+			"key": "min_free_space",
+			"value": "\"10\""
+		},
+		{
+			"key": "min_free_space_unit",
+			"value": "\"MB\""
+		},
+		{
+			"key": "mysqlbackup",
+			"value": "\"accounts\""
+		},
+		{
+			"key": "backupname",
+			"value": "\"server1\""
+		},
+		{
+			"key": "backuptypedest",
+			"value": "\"local\""
+		},
+		{
+			"key": "disabled",
+			"value": "\"0\""
+		},
+		{
+			"key": "bucket",
+			"value": "\"ChockFullOfNuts\""
+		},
+		{
+			"key": "aws_access_key_id",
+			"value": "\"AKIAYLWMPOZZJCERC28Q\""
+		},
+		{
+			"key": "backuppassword",
+			"value": "\"123456luggage\""
+		},
+		{
+			"key": "application_key",
+			"value": "\"application_key\""
+		},
+		{
+			"key": "application_key_id",
+			"value": "\"12a345B678c9\""
+		},
+		{
+			"key": "bucket_id",
+			"value": "\"a12b34cd5678e9f\""
+		},
+		{
+			"key": "bucket_name",
+			"value": "\"ChockFullOfNuts\""
+		},
+		{
+			"key": "script",
+			"value": "\"/home/backups/beammeupscotty.pl\""
+		},
+		{
+			"key": "host",
+			"value": "\"backups.example.com\""
+		},
+		{
+			"key": "backupusername",
+			"value": "\"username\""
+		},
+		{
+			"key": "client_id",
+			"value": "\"aBcdeFgHIjK123\""
+		},
+		{
+			"key": "client_secret",
+			"value": "\"aBcde123FgHIjK456\""
+		},
+		{
+			"key": "authtype",
+			"value": "\"password\""
+		},
+		{
+			"key": "path",
+			"value": "\"Custom\""
+		},
+		{
+			"key": "restore_point",
+			"value": "\"2021-10-16\""
+		}
+	]
+}
