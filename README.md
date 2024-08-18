@@ -50,7 +50,7 @@ This is a Flask application that interacts with the WHM API to manage accounts, 
 4. **Create a `.env` file in the root directory of your project and add your WHM server URL and token:**
 
    ```env
-   URL=https://server_ip:whm_port# defualt is 2087
+   URL=https://server_ip:whm_port# Defualt is 2087
    TOKEN=your_token_here
    ```
 
